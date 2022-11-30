@@ -1,0 +1,44 @@
+item = [ {'name': 'Bike', 'price':100}, 
+{'name': 'TV', 'price':200},
+{'name': 'album', 'price':10}, 
+{'name': 'book', 'price':5}, 
+{'name': 'phone', 'price':500}, 
+{'name': 'computer', 'price':1000} 
+]
+
+# ....QUESTION NUMBER ONE
+
+max=item[0]['price']
+for l in range(0,len(item)):
+  if l <=max:
+    max=item[l]['price']
+    product=item[l]
+print(product)
+
+#......QUESTION NUMBER 2
+
+
+max=item[0]['price']
+for l in range(0,len(item)):
+  r=item[l]['price']
+  if r >=max:
+    max=item[l]['price']
+    product=item[l]
+print(product)
+
+# ...... QUESTION NUMBER THREE
+  
+sum=0 
+for k in range(0,len(item)):
+  sum=sum+item[k]['price']
+print(sum)
+
+
+#----QESTION NUMBER FOUR
+sum=0 
+for m in range(0,len(item)):
+    if item[m]['price']<10:
+        item[m]['price']=0
+    sum=sum+item[m]['price']
+  
+print(sum)
